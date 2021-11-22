@@ -15,6 +15,10 @@ public class ProductController {
   @Autowired
   ProductService productManager;
 
+  /**
+   * 
+   * @return Products
+   */
   @GetMapping("/products")
   public List<Product> getProducts() {
     return productManager.getProducts();
